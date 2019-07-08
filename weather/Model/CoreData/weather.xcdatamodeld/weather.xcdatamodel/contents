@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CityWeathers" representedClassName=".CityWeathers" syncable="YES">
+        <attribute name="chill" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.wind.chill"/>
+            </userInfo>
+        </attribute>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.city"/>
+            </userInfo>
+        </attribute>
+        <attribute name="code" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.condition.code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.country"/>
+            </userInfo>
+        </attribute>
+        <attribute name="currentLocation" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="direction" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.wind.direction"/>
+            </userInfo>
+        </attribute>
+        <attribute name="humidity" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.atmosphere.humidity"/>
+            </userInfo>
+        </attribute>
+        <attribute name="lastUpdate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.lat"/>
+            </userInfo>
+        </attribute>
+        <attribute name="long" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.long"/>
+            </userInfo>
+        </attribute>
+        <attribute name="noDelete" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.atmosphere.pressure"/>
+            </userInfo>
+        </attribute>
+        <attribute name="pubDate" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.pubDate"/>
+            </userInfo>
+        </attribute>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.region"/>
+            </userInfo>
+        </attribute>
+        <attribute name="speed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.wind.speed"/>
+            </userInfo>
+        </attribute>
+        <attribute name="sunrise" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.astronomy.sunrise"/>
+            </userInfo>
+        </attribute>
+        <attribute name="sunset" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.astronomy.sunset"/>
+            </userInfo>
+        </attribute>
+        <attribute name="temperature" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.condition.temperature"/>
+            </userInfo>
+        </attribute>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.condition.text"/>
+            </userInfo>
+        </attribute>
+        <attribute name="timezoneID" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.timezone_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="visibility" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="current_observation.atmosphere.visibility"/>
+            </userInfo>
+        </attribute>
+        <attribute name="woeid" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="location.woeid"/>
+            </userInfo>
+        </attribute>
+        <relationship name="forecasts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Forecast" inverseName="currentCity" inverseEntity="Forecast" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="forecasts"/>
+            </userInfo>
+        </relationship>
+        <fetchIndex name="byWoeidIndex">
+            <fetchIndexElement property="woeid" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byCoordinateIndex">
+            <fetchIndexElement property="long" type="Binary" order="ascending"/>
+            <fetchIndexElement property="lat" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <fetchIndex name="byNameIndex">
+            <fetchIndexElement property="city" type="Binary" order="ascending"/>
+            <fetchIndexElement property="country" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <userInfo>
+            <entry key="identityAttribute" value="city, lat, long, woeid"/>
+        </userInfo>
+    </entity>
+    <entity name="Forecast" representedClassName=".Forecast" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="code"/>
+            </userInfo>
+        </attribute>
+        <attribute name="date" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="date"/>
+            </userInfo>
+        </attribute>
+        <attribute name="day" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="day"/>
+            </userInfo>
+        </attribute>
+        <attribute name="high" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="high"/>
+            </userInfo>
+        </attribute>
+        <attribute name="low" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="low"/>
+            </userInfo>
+        </attribute>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="JSONKeyPath" value="text"/>
+            </userInfo>
+        </attribute>
+        <relationship name="currentCity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CityWeathers" inverseName="forecasts" inverseEntity="CityWeathers" syncable="YES"/>
+        <fetchIndex name="byDateIndex">
+            <fetchIndexElement property="date" type="Binary" order="ascending"/>
+        </fetchIndex>
+        <userInfo>
+            <entry key="JSONKeyPath" value="forecast"/>
+        </userInfo>
+    </entity>
+    <elements>
+        <element name="CityWeathers" positionX="-290.953125" positionY="-69.109375" width="128" height="390"/>
+        <element name="Forecast" positionX="-54" positionY="54" width="128" height="150"/>
+    </elements>
+</model>

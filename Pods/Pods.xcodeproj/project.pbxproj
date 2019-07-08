@@ -1,0 +1,1021 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05878DD9133F550AD6C415D2A9AF2C4A /* NSEntityDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0B49A7EFB4B01B9412A88E578A9519 /* NSEntityDescription+Groot.m */; };
+		07036A247823204B48B1B4B0E5DFDA0C /* GRTSerializationStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E94B41A36EB09B26A02CB71FC597A9 /* GRTSerializationStrategy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0C8450736D5E0ACD11A64A6599B950F6 /* NSManagedObject+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = CDE4C954C1225669396A32EB33B4130B /* NSManagedObject+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		191AE43B17C2FD798D0C6085B23766FB /* GRTManagedStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9113DD7168955046ECFBC9D48650256F /* GRTManagedStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D87577E48E8417C758994DF4157E804 /* OAuthSwiftHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAC55F7A35DB86B550F51743782B3FB /* OAuthSwiftHTTPRequest.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		226852C7829EA09E560FE29C5E2CA684 /* GRTJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = D62D6DDECB90932C413B10A36E17AA8F /* GRTJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		234B2A2EC6AE4CE3DFBC79D53F365663 /* Collection+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4618019A101AAE52283AE5A78C83DD0 /* Collection+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		26894DF9CA5DCDBFC404D1CB39A5C186 /* Objc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A1893A3AF996162E189669F417273A /* Objc.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2833E76F8887566314855E67021B1356 /* Int+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57855F024CB8737D7D73547B1CFF63E9 /* Int+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		29EDA1C0FEF0E299F4FD1F6ECD28AE2F /* String+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D337534353CA677D1ECEAB6C19F1880B /* String+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		34741C5DB5821B4E1C0319400B608555 /* NSError+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C2506DAFE2A06D11072C9C0C96A751 /* NSError+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3680084EC5D26076029B01E45BBC4AA4 /* Dictionary+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81228E25C1783809695D2631D99C000A /* Dictionary+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3936CE742856BD02B0AA80F87279B509 /* GRTUniquingSerializationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B435BB3CE658E8D6D23BC7FC9AA868 /* GRTUniquingSerializationStrategy.m */; };
+		40ED84BB56C66F87881D6A9DC62F9AF3 /* GRTManagedStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F9304B507D1E94752B2EE04C25BB2A /* GRTManagedStore.m */; };
+		44FB2935D67B0DB7BC8C138D39BE0C8A /* Pods-weather-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B23C6A12917135A9186423EC53F01B61 /* Pods-weather-dummy.m */; };
+		451C55B3D4CAD8BBC48E5C167020247A /* OAuth2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6D920A40592A626EC889803F16A817 /* OAuth2Swift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		46C737A053486F7C9875F01ADDAFC508 /* Groot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51304950C203F8722FD16A067639D442 /* Groot-dummy.m */; };
+		46F32E92425539DD2D3E9179A574B561 /* GRTInsertSerializationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F0F622FC9021259E21AB28FEBE85AB /* GRTInsertSerializationStrategy.m */; };
+		491F097F0A3750BF5A7AD5175C353B53 /* NSValueTransformer+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D4FD860DFF2BE48163BBCA8678DF32 /* NSValueTransformer+Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AF5DEEC70BFB70CF7DD12CA9677A660 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF806D318E503AF202AE607222E10543 /* Utils.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4DA72106D9A8B351D5B6CD99A9E2400E /* NSValueTransformer+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 002BA8CD8DE4090A19287A2526B8FB71 /* NSValueTransformer+Groot.m */; };
+		4F84F8972BF6C75CF4079F44866D3A93 /* OAuthSwiftMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF00877447D1EAEA8D4793E691F42936 /* OAuthSwiftMultipartData.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		51CD823F936FBC73921F323928A3BB13 /* GRTInsertSerializationStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 90DA09FA308A271A2297A91D432849E9 /* GRTInsertSerializationStrategy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		55058428EDFDDA45C53F1B7C13495544 /* OAuth1Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6540B0CED258F306971CBDEFCAE0A1BE /* OAuth1Swift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5588A4465814B6E8D986BF3C38B874DC /* NSArray+DictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4A5911A2D31512D16271D6048AAC5F /* NSArray+DictionaryTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		64480CDA99F57018DCC2EE47C097008C /* OAuthSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BACCE790063AF934FF1C79E43B7CC2E6 /* OAuthSwift-dummy.m */; };
+		64E9008548CE2CB0BE8B8F3C67EBEEE1 /* GRTValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F24B906A01D206987A9E23C085D9F7B /* GRTValueTransformer.m */; };
+		67418B37E38CEF881149AEC5800E7D9F /* GRTError.h in Headers */ = {isa = PBXBuildFile; fileRef = B3E2E7C43C3AB1BE2B7BCE014074B860 /* GRTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		685325E1CA40A40400500762BC6BC4B5 /* GRTCompositeUniquingSerializationStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = 11547575A91B80FF59AC9C66C8A24375 /* GRTCompositeUniquingSerializationStrategy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		69DC2332D770A0B12F3C7D19C3A2EBAB /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17654707D12326D62674FEEC02F9FDE /* SHA1.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		740904F7177719A6E23966C19FB8ECC9 /* NSAttributeDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD1D5BBF189E868403091C15CA79BC7 /* NSAttributeDescription+Groot.m */; };
+		77364149AC1E3942703431CE8170377D /* GRTManagedObjectSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860385E25523F02EE01FDE6F6720451 /* GRTManagedObjectSerializer.m */; };
+		7D171F86BFF978A7AC725110BEA6B72C /* OAuthWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06E466E504AC522100F5D5D7D95029 /* OAuthWebViewController.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		835A83D069F945E38846470A01EBA118 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635FE853749861483FFFF8BC0227DC5B /* CoreData.framework */; };
+		864615ED1D3E20F1A195E36E6EC9DD62 /* NotificationCenter+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40710F26A713141413FF6B368C04F87 /* NotificationCenter+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8CA2F6B81D2773F2375395835FBFB295 /* URL+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F5FF1D6AD8F3988793460700EF95E1 /* URL+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8D7FA36CAFFE793070A87238E3873531 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6020C95AD37D1245C08334E3A43BA17B /* HMAC.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8F453F48D23D9B7EA3A652D26C9778D1 /* GRTUniquingSerializationStrategy.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA2720221B5B5107059FF70A924F5BB /* GRTUniquingSerializationStrategy.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9AD6FAF770D0AF4620008F911CFAA818 /* OAuthSwiftError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8450A223932BB3909C9FE3D030A6A1D /* OAuthSwiftError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9D8F90D077ADEE3CBEE6756B6D491159 /* OAuthSwiftClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDD45258E20AE6D1BBE882A0F82D157 /* OAuthSwiftClient.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A57265AC6C511CA6236B15C74D29FF62 /* OAuthSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB1CD8158D130126471624AF19A3838 /* OAuthSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A96A8A90503CA4543249F7C5AD53630F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAA76398050196B185CB979D54B2515 /* Foundation.framework */; };
+		B0518808166614A2F53421B23ECCDE9B /* NSManagedObject+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = DB64965B0C625507486FDC7B88A565E3 /* NSManagedObject+Groot.m */; };
+		B21B42C4A8FD93B7CC93CC6CC9706491 /* NSArray+DictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E11BD5D990E65374965F18B85F98135 /* NSArray+DictionaryTransformer.m */; };
+		B25499C704DF9B20AD6BF98E7010E345 /* NSEntityDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F581DC82EF4D2EF490E0C907B2727E3 /* NSEntityDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B514298D2AD2B5BDDCA4BCD37A8155F5 /* Pods-weather-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 217C748A4A88DC04055B0F87DCDAD599 /* Pods-weather-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6EE55042FD7B7C98A680C6130998363 /* OAuthSwiftResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA45BB4E8ACD1ADE97531B2E20E9C0 /* OAuthSwiftResponse.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BD09FD5BFA80B9B5A606C4ADC5440095 /* Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B290B97A95191BAD1D8953DD1E73815 /* Groot.swift */; };
+		BF34F503569C3B69F2F9D5A8E7F2716F /* URLConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4A8C233665E02FF397E8C938AA6032 /* URLConvertible.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C02BC4FC1872A3E9D4DC8C36B8096360 /* NSPropertyDescription+Groot.m in Sources */ = {isa = PBXBuildFile; fileRef = 331121F7D4FE73B9721EBDEBD75EBF4C /* NSPropertyDescription+Groot.m */; };
+		C512AA403116070406CB2A994034BFBC /* Data+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AB530087AD6B5B0243163EF1BC0478 /* Data+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C54FF5C35A5A73489A2AE7454A033C0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAA76398050196B185CB979D54B2515 /* Foundation.framework */; };
+		CCA3D12B23502584EBE5E3598FCC1B91 /* Groot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56B0B8812DD5748914879C2FFE13A572 /* Groot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D06EA3F97F681BB86867BA32539ADB9B /* GRTJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 586031706F76F70EEE1AE489CED1AFA7 /* GRTJSONSerialization.m */; };
+		D7B84CFED7519EA13D0E8B711C08C473 /* OAuthSwiftURLHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AB15FE77C889FADC39CAABD972B1BD /* OAuthSwiftURLHandlerType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D9128A7AF733CCF0AD83EB9940537CA9 /* NSAttributeDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C15B4306AB1FFBA6F1BCC3DDBF08EE3 /* NSAttributeDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DA35A16FFB3E948D9FA10CC6DEFFF011 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAA76398050196B185CB979D54B2515 /* Foundation.framework */; };
+		DCD5946D527AB9CF3F1ACB214830485F /* GRTManagedObjectSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F65ADDFE451F2C5F9FE7B5649306E1D /* GRTManagedObjectSerializer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DD39B61874E63851FE0705111A54D9AA /* UIApplication+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D985201AC8416BB96981338F639165 /* UIApplication+OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E4A4A2340D93031F6A89AFF2566E6180 /* GRTSerializationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF8FD7B4CFEF5C59D92391F9C918FF /* GRTSerializationStrategy.m */; };
+		E7ED6AA3C3133DCC454194585FB53910 /* GRTValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C3237915769B7581B889826A717600D /* GRTValueTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F05622D58BA14B177F72CE904549D6CF /* GRTCompositeUniquingSerializationStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 469B78DFFE74128445FA9372EC4E5BCE /* GRTCompositeUniquingSerializationStrategy.m */; };
+		F65A0F2654BA9D551B046E47538C612B /* OAuthSwiftCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E7823B302A1677845797F6BC5BE481 /* OAuthSwiftCredential.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F7E734C64B8A4547796237D305E1AA32 /* GRTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9505EEEE6A7F5F3408FAE3CAF64A76BE /* GRTError.m */; };
+		F9739AB8575C91F7FA0F41B52579E5B1 /* Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 78253EB70B116E2B9AF671BE59C3EC79 /* Groot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC70EEB796E14FE6B87FD62D8C118A88 /* NSPropertyDescription+Groot.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A64760A6772B1A58D115F5D0E4A960 /* NSPropertyDescription+Groot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		FD63C9E3B5960FC2748E0CC1897D53A2 /* OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63B86897825A176E468B1BFA07C197C /* OAuthSwift.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FDF896D819F967F1E5ED96DE6F86A6E5 /* ValueTransformer+Groot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AA325578277AA10770BDE8DB39BFDF /* ValueTransformer+Groot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65CD502EB13CA3B05D63141A312C1A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDC4FC46E4BE584E1B0448F97C351034;
+			remoteInfo = Groot;
+		};
+		F57D26A92210F3C4A18066745AE01AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B12BDD79376D157DF206CE8D82736668;
+			remoteInfo = OAuthSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002BA8CD8DE4090A19287A2526B8FB71 /* NSValueTransformer+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValueTransformer+Groot.m"; path = "Groot/NSValueTransformer+Groot.m"; sourceTree = "<group>"; };
+		02C2506DAFE2A06D11072C9C0C96A751 /* NSError+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSError+OAuthSwift.swift"; path = "Sources/NSError+OAuthSwift.swift"; sourceTree = "<group>"; };
+		02F5FF1D6AD8F3988793460700EF95E1 /* URL+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+OAuthSwift.swift"; path = "Sources/URL+OAuthSwift.swift"; sourceTree = "<group>"; };
+		05BA3E167BB032CBEEC0E469D4D81F7A /* OAuthSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OAuthSwift.xcconfig; sourceTree = "<group>"; };
+		07AB530087AD6B5B0243163EF1BC0478 /* Data+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+OAuthSwift.swift"; path = "Sources/Data+OAuthSwift.swift"; sourceTree = "<group>"; };
+		0B290B97A95191BAD1D8953DD1E73815 /* Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Groot.swift; path = Groot/Groot.swift; sourceTree = "<group>"; };
+		0E9E22F0FC6733F37A25C3609CA88A67 /* OAuthSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OAuthSwift.modulemap; sourceTree = "<group>"; };
+		11547575A91B80FF59AC9C66C8A24375 /* GRTCompositeUniquingSerializationStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTCompositeUniquingSerializationStrategy.h; path = Groot/Private/GRTCompositeUniquingSerializationStrategy.h; sourceTree = "<group>"; };
+		115BD2CEB1DA2A5987FFDA5A92352FCB /* Groot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Groot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E94B41A36EB09B26A02CB71FC597A9 /* GRTSerializationStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTSerializationStrategy.h; path = Groot/Private/GRTSerializationStrategy.h; sourceTree = "<group>"; };
+		19F9304B507D1E94752B2EE04C25BB2A /* GRTManagedStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTManagedStore.m; path = Groot/GRTManagedStore.m; sourceTree = "<group>"; };
+		1C15B4306AB1FFBA6F1BCC3DDBF08EE3 /* NSAttributeDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributeDescription+Groot.h"; path = "Groot/Private/NSAttributeDescription+Groot.h"; sourceTree = "<group>"; };
+		217C748A4A88DC04055B0F87DCDAD599 /* Pods-weather-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-weather-umbrella.h"; sourceTree = "<group>"; };
+		27A1893A3AF996162E189669F417273A /* Objc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Objc.swift; path = Sources/Objc.swift; sourceTree = "<group>"; };
+		28B435BB3CE658E8D6D23BC7FC9AA868 /* GRTUniquingSerializationStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTUniquingSerializationStrategy.m; path = Groot/Private/GRTUniquingSerializationStrategy.m; sourceTree = "<group>"; };
+		31E7823B302A1677845797F6BC5BE481 /* OAuthSwiftCredential.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftCredential.swift; path = Sources/OAuthSwiftCredential.swift; sourceTree = "<group>"; };
+		331121F7D4FE73B9721EBDEBD75EBF4C /* NSPropertyDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPropertyDescription+Groot.m"; path = "Groot/Private/NSPropertyDescription+Groot.m"; sourceTree = "<group>"; };
+		33D985201AC8416BB96981338F639165 /* UIApplication+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+OAuthSwift.swift"; path = "Sources/UIApplication+OAuthSwift.swift"; sourceTree = "<group>"; };
+		3F581DC82EF4D2EF490E0C907B2727E3 /* NSEntityDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSEntityDescription+Groot.h"; path = "Groot/Private/NSEntityDescription+Groot.h"; sourceTree = "<group>"; };
+		45AA325578277AA10770BDE8DB39BFDF /* ValueTransformer+Groot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ValueTransformer+Groot.swift"; path = "Groot/ValueTransformer+Groot.swift"; sourceTree = "<group>"; };
+		469B78DFFE74128445FA9372EC4E5BCE /* GRTCompositeUniquingSerializationStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTCompositeUniquingSerializationStrategy.m; path = Groot/Private/GRTCompositeUniquingSerializationStrategy.m; sourceTree = "<group>"; };
+		478FF732DB71B9C96D89CDB78D82110B /* Pods_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4860385E25523F02EE01FDE6F6720451 /* GRTManagedObjectSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTManagedObjectSerializer.m; path = Groot/Private/GRTManagedObjectSerializer.m; sourceTree = "<group>"; };
+		4C3237915769B7581B889826A717600D /* GRTValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTValueTransformer.h; path = Groot/Private/GRTValueTransformer.h; sourceTree = "<group>"; };
+		4DDD45258E20AE6D1BBE882A0F82D157 /* OAuthSwiftClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftClient.swift; path = Sources/OAuthSwiftClient.swift; sourceTree = "<group>"; };
+		4E11BD5D990E65374965F18B85F98135 /* NSArray+DictionaryTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+DictionaryTransformer.m"; path = "Groot/Private/NSArray+DictionaryTransformer.m"; sourceTree = "<group>"; };
+		51304950C203F8722FD16A067639D442 /* Groot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Groot-dummy.m"; sourceTree = "<group>"; };
+		52A64760A6772B1A58D115F5D0E4A960 /* NSPropertyDescription+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSPropertyDescription+Groot.h"; path = "Groot/Private/NSPropertyDescription+Groot.h"; sourceTree = "<group>"; };
+		56B0B8812DD5748914879C2FFE13A572 /* Groot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Groot-umbrella.h"; sourceTree = "<group>"; };
+		57855F024CB8737D7D73547B1CFF63E9 /* Int+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+OAuthSwift.swift"; path = "Sources/Int+OAuthSwift.swift"; sourceTree = "<group>"; };
+		586031706F76F70EEE1AE489CED1AFA7 /* GRTJSONSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTJSONSerialization.m; path = Groot/GRTJSONSerialization.m; sourceTree = "<group>"; };
+		58F3E856581F553B1A8EF386CBD1026C /* Groot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Groot-Info.plist"; sourceTree = "<group>"; };
+		5EB1CD8158D130126471624AF19A3838 /* OAuthSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-umbrella.h"; sourceTree = "<group>"; };
+		5F24B906A01D206987A9E23C085D9F7B /* GRTValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTValueTransformer.m; path = Groot/Private/GRTValueTransformer.m; sourceTree = "<group>"; };
+		5F65ADDFE451F2C5F9FE7B5649306E1D /* GRTManagedObjectSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTManagedObjectSerializer.h; path = Groot/Private/GRTManagedObjectSerializer.h; sourceTree = "<group>"; };
+		6020C95AD37D1245C08334E3A43BA17B /* HMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HMAC.swift; path = Sources/HMAC.swift; sourceTree = "<group>"; };
+		624CC292B9B7A17EC53E9C9783CC5781 /* OAuthSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-prefix.pch"; sourceTree = "<group>"; };
+		635FE853749861483FFFF8BC0227DC5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		6540B0CED258F306971CBDEFCAE0A1BE /* OAuth1Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth1Swift.swift; path = Sources/OAuth1Swift.swift; sourceTree = "<group>"; };
+		67BD8DDFB48C091F1D325779FB9D6324 /* OAuthSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A4A8C233665E02FF397E8C938AA6032 /* URLConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLConvertible.swift; path = Sources/URLConvertible.swift; sourceTree = "<group>"; };
+		77F0F622FC9021259E21AB28FEBE85AB /* GRTInsertSerializationStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTInsertSerializationStrategy.m; path = Groot/Private/GRTInsertSerializationStrategy.m; sourceTree = "<group>"; };
+		78253EB70B116E2B9AF671BE59C3EC79 /* Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Groot.h; path = Groot/Groot.h; sourceTree = "<group>"; };
+		7A4A5911A2D31512D16271D6048AAC5F /* NSArray+DictionaryTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+DictionaryTransformer.h"; path = "Groot/Private/NSArray+DictionaryTransformer.h"; sourceTree = "<group>"; };
+		81228E25C1783809695D2631D99C000A /* Dictionary+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+OAuthSwift.swift"; path = "Sources/Dictionary+OAuthSwift.swift"; sourceTree = "<group>"; };
+		82A0C2E6E6B37CDF2101D736A235439E /* Pods-weather.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-weather.modulemap"; sourceTree = "<group>"; };
+		86642C5CF375E90A6C39C60AF84D3BD0 /* Pods-weather-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-weather-acknowledgements.plist"; sourceTree = "<group>"; };
+		8C0B49A7EFB4B01B9412A88E578A9519 /* NSEntityDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSEntityDescription+Groot.m"; path = "Groot/Private/NSEntityDescription+Groot.m"; sourceTree = "<group>"; };
+		8FEF8FD7B4CFEF5C59D92391F9C918FF /* GRTSerializationStrategy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTSerializationStrategy.m; path = Groot/Private/GRTSerializationStrategy.m; sourceTree = "<group>"; };
+		90DA09FA308A271A2297A91D432849E9 /* GRTInsertSerializationStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTInsertSerializationStrategy.h; path = Groot/Private/GRTInsertSerializationStrategy.h; sourceTree = "<group>"; };
+		9113DD7168955046ECFBC9D48650256F /* GRTManagedStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTManagedStore.h; path = Groot/GRTManagedStore.h; sourceTree = "<group>"; };
+		9306CD457F670A31FC091A617E24012C /* Groot-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Groot-prefix.pch"; sourceTree = "<group>"; };
+		94AA45BB4E8ACD1ADE97531B2E20E9C0 /* OAuthSwiftResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftResponse.swift; path = Sources/OAuthSwiftResponse.swift; sourceTree = "<group>"; };
+		9505EEEE6A7F5F3408FAE3CAF64A76BE /* GRTError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GRTError.m; path = Groot/GRTError.m; sourceTree = "<group>"; };
+		96AB15FE77C889FADC39CAABD972B1BD /* OAuthSwiftURLHandlerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftURLHandlerType.swift; path = Sources/OAuthSwiftURLHandlerType.swift; sourceTree = "<group>"; };
+		99302C1CC82AC868B2A1854888EF086D /* OAuthSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OAuthSwift-Info.plist"; sourceTree = "<group>"; };
+		9C9622A6633F03ED948E19F0ED1322D0 /* Groot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Groot.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8450A223932BB3909C9FE3D030A6A1D /* OAuthSwiftError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftError.swift; path = Sources/OAuthSwiftError.swift; sourceTree = "<group>"; };
+		A8D4FD860DFF2BE48163BBCA8678DF32 /* NSValueTransformer+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+Groot.h"; path = "Groot/NSValueTransformer+Groot.h"; sourceTree = "<group>"; };
+		AEAA76398050196B185CB979D54B2515 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B057084FA747235A6E286E80BE9624F6 /* Pods-weather-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-weather-frameworks.sh"; sourceTree = "<group>"; };
+		B17654707D12326D62674FEEC02F9FDE /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/SHA1.swift; sourceTree = "<group>"; };
+		B23C6A12917135A9186423EC53F01B61 /* Pods-weather-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-weather-dummy.m"; sourceTree = "<group>"; };
+		B3E2E7C43C3AB1BE2B7BCE014074B860 /* GRTError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTError.h; path = Groot/GRTError.h; sourceTree = "<group>"; };
+		B4618019A101AAE52283AE5A78C83DD0 /* Collection+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+OAuthSwift.swift"; path = "Sources/Collection+OAuthSwift.swift"; sourceTree = "<group>"; };
+		B6172469418FC28458879D89707675E1 /* Pods-weather-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-weather-Info.plist"; sourceTree = "<group>"; };
+		B8432D2E5A81E574EF522C24A2FECC7D /* Pods-weather-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-weather-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BACCE790063AF934FF1C79E43B7CC2E6 /* OAuthSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OAuthSwift-dummy.m"; sourceTree = "<group>"; };
+		BB6D920A40592A626EC889803F16A817 /* OAuth2Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth2Swift.swift; path = Sources/OAuth2Swift.swift; sourceTree = "<group>"; };
+		BF06E466E504AC522100F5D5D7D95029 /* OAuthWebViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthWebViewController.swift; path = Sources/OAuthWebViewController.swift; sourceTree = "<group>"; };
+		C82B2971576EAADE99758FB087F18984 /* Pods-weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-weather.release.xcconfig"; sourceTree = "<group>"; };
+		CDE4C954C1225669396A32EB33B4130B /* NSManagedObject+Groot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+Groot.h"; path = "Groot/Private/NSManagedObject+Groot.h"; sourceTree = "<group>"; };
+		CFAC55F7A35DB86B550F51743782B3FB /* OAuthSwiftHTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftHTTPRequest.swift; path = Sources/OAuthSwiftHTTPRequest.swift; sourceTree = "<group>"; };
+		D337534353CA677D1ECEAB6C19F1880B /* String+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+OAuthSwift.swift"; path = "Sources/String+OAuthSwift.swift"; sourceTree = "<group>"; };
+		D40710F26A713141413FF6B368C04F87 /* NotificationCenter+OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NotificationCenter+OAuthSwift.swift"; path = "Sources/NotificationCenter+OAuthSwift.swift"; sourceTree = "<group>"; };
+		D62D6DDECB90932C413B10A36E17AA8F /* GRTJSONSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTJSONSerialization.h; path = Groot/GRTJSONSerialization.h; sourceTree = "<group>"; };
+		D8CD5C9E8B2FBE8146E6E1EC9989C6E0 /* Pods-weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-weather.debug.xcconfig"; sourceTree = "<group>"; };
+		DA44EB7E4A4D4914A21C417284F649D6 /* Groot.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Groot.xcconfig; sourceTree = "<group>"; };
+		DB64965B0C625507486FDC7B88A565E3 /* NSManagedObject+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+Groot.m"; path = "Groot/Private/NSManagedObject+Groot.m"; sourceTree = "<group>"; };
+		DDA2720221B5B5107059FF70A924F5BB /* GRTUniquingSerializationStrategy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GRTUniquingSerializationStrategy.h; path = Groot/Private/GRTUniquingSerializationStrategy.h; sourceTree = "<group>"; };
+		EF00877447D1EAEA8D4793E691F42936 /* OAuthSwiftMultipartData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwiftMultipartData.swift; path = Sources/OAuthSwiftMultipartData.swift; sourceTree = "<group>"; };
+		EF806D318E503AF202AE607222E10543 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		F63B86897825A176E468B1BFA07C197C /* OAuthSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthSwift.swift; path = Sources/OAuthSwift.swift; sourceTree = "<group>"; };
+		FAD1D5BBF189E868403091C15CA79BC7 /* NSAttributeDescription+Groot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSAttributeDescription+Groot.m"; path = "Groot/Private/NSAttributeDescription+Groot.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BBFCB911AA45835926893BB36618BC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				835A83D069F945E38846470A01EBA118 /* CoreData.framework in Frameworks */,
+				DA35A16FFB3E948D9FA10CC6DEFFF011 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83B44162484C8BA7FE44F1D356DA48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96A8A90503CA4543249F7C5AD53630F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB58E60224B9504258A4248F9D5A4ED5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54FF5C35A5A73489A2AE7454A033C0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02100A24B3561D0CCB7C6B342023096F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				78253EB70B116E2B9AF671BE59C3EC79 /* Groot.h */,
+				0B290B97A95191BAD1D8953DD1E73815 /* Groot.swift */,
+				11547575A91B80FF59AC9C66C8A24375 /* GRTCompositeUniquingSerializationStrategy.h */,
+				469B78DFFE74128445FA9372EC4E5BCE /* GRTCompositeUniquingSerializationStrategy.m */,
+				B3E2E7C43C3AB1BE2B7BCE014074B860 /* GRTError.h */,
+				9505EEEE6A7F5F3408FAE3CAF64A76BE /* GRTError.m */,
+				90DA09FA308A271A2297A91D432849E9 /* GRTInsertSerializationStrategy.h */,
+				77F0F622FC9021259E21AB28FEBE85AB /* GRTInsertSerializationStrategy.m */,
+				D62D6DDECB90932C413B10A36E17AA8F /* GRTJSONSerialization.h */,
+				586031706F76F70EEE1AE489CED1AFA7 /* GRTJSONSerialization.m */,
+				5F65ADDFE451F2C5F9FE7B5649306E1D /* GRTManagedObjectSerializer.h */,
+				4860385E25523F02EE01FDE6F6720451 /* GRTManagedObjectSerializer.m */,
+				9113DD7168955046ECFBC9D48650256F /* GRTManagedStore.h */,
+				19F9304B507D1E94752B2EE04C25BB2A /* GRTManagedStore.m */,
+				12E94B41A36EB09B26A02CB71FC597A9 /* GRTSerializationStrategy.h */,
+				8FEF8FD7B4CFEF5C59D92391F9C918FF /* GRTSerializationStrategy.m */,
+				DDA2720221B5B5107059FF70A924F5BB /* GRTUniquingSerializationStrategy.h */,
+				28B435BB3CE658E8D6D23BC7FC9AA868 /* GRTUniquingSerializationStrategy.m */,
+				4C3237915769B7581B889826A717600D /* GRTValueTransformer.h */,
+				5F24B906A01D206987A9E23C085D9F7B /* GRTValueTransformer.m */,
+				7A4A5911A2D31512D16271D6048AAC5F /* NSArray+DictionaryTransformer.h */,
+				4E11BD5D990E65374965F18B85F98135 /* NSArray+DictionaryTransformer.m */,
+				1C15B4306AB1FFBA6F1BCC3DDBF08EE3 /* NSAttributeDescription+Groot.h */,
+				FAD1D5BBF189E868403091C15CA79BC7 /* NSAttributeDescription+Groot.m */,
+				3F581DC82EF4D2EF490E0C907B2727E3 /* NSEntityDescription+Groot.h */,
+				8C0B49A7EFB4B01B9412A88E578A9519 /* NSEntityDescription+Groot.m */,
+				CDE4C954C1225669396A32EB33B4130B /* NSManagedObject+Groot.h */,
+				DB64965B0C625507486FDC7B88A565E3 /* NSManagedObject+Groot.m */,
+				52A64760A6772B1A58D115F5D0E4A960 /* NSPropertyDescription+Groot.h */,
+				331121F7D4FE73B9721EBDEBD75EBF4C /* NSPropertyDescription+Groot.m */,
+				A8D4FD860DFF2BE48163BBCA8678DF32 /* NSValueTransformer+Groot.h */,
+				002BA8CD8DE4090A19287A2526B8FB71 /* NSValueTransformer+Groot.m */,
+				45AA325578277AA10770BDE8DB39BFDF /* ValueTransformer+Groot.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC2B7A65847D0CF9467B8376409C4AC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BC2B7A65847D0CF9467B8376409C4AC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				635FE853749861483FFFF8BC0227DC5B /* CoreData.framework */,
+				AEAA76398050196B185CB979D54B2515 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		439E604F856BBCF319B9FCB7D4B90B9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C9622A6633F03ED948E19F0ED1322D0 /* Groot.modulemap */,
+				DA44EB7E4A4D4914A21C417284F649D6 /* Groot.xcconfig */,
+				51304950C203F8722FD16A067639D442 /* Groot-dummy.m */,
+				58F3E856581F553B1A8EF386CBD1026C /* Groot-Info.plist */,
+				9306CD457F670A31FC091A617E24012C /* Groot-prefix.pch */,
+				56B0B8812DD5748914879C2FFE13A572 /* Groot-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Groot";
+			sourceTree = "<group>";
+		};
+		4E53F2CB8BB87E06BB1B8BDD65728542 /* OAuthSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B4618019A101AAE52283AE5A78C83DD0 /* Collection+OAuthSwift.swift */,
+				07AB530087AD6B5B0243163EF1BC0478 /* Data+OAuthSwift.swift */,
+				81228E25C1783809695D2631D99C000A /* Dictionary+OAuthSwift.swift */,
+				6020C95AD37D1245C08334E3A43BA17B /* HMAC.swift */,
+				57855F024CB8737D7D73547B1CFF63E9 /* Int+OAuthSwift.swift */,
+				D40710F26A713141413FF6B368C04F87 /* NotificationCenter+OAuthSwift.swift */,
+				02C2506DAFE2A06D11072C9C0C96A751 /* NSError+OAuthSwift.swift */,
+				6540B0CED258F306971CBDEFCAE0A1BE /* OAuth1Swift.swift */,
+				BB6D920A40592A626EC889803F16A817 /* OAuth2Swift.swift */,
+				F63B86897825A176E468B1BFA07C197C /* OAuthSwift.swift */,
+				4DDD45258E20AE6D1BBE882A0F82D157 /* OAuthSwiftClient.swift */,
+				31E7823B302A1677845797F6BC5BE481 /* OAuthSwiftCredential.swift */,
+				A8450A223932BB3909C9FE3D030A6A1D /* OAuthSwiftError.swift */,
+				CFAC55F7A35DB86B550F51743782B3FB /* OAuthSwiftHTTPRequest.swift */,
+				EF00877447D1EAEA8D4793E691F42936 /* OAuthSwiftMultipartData.swift */,
+				94AA45BB4E8ACD1ADE97531B2E20E9C0 /* OAuthSwiftResponse.swift */,
+				96AB15FE77C889FADC39CAABD972B1BD /* OAuthSwiftURLHandlerType.swift */,
+				BF06E466E504AC522100F5D5D7D95029 /* OAuthWebViewController.swift */,
+				27A1893A3AF996162E189669F417273A /* Objc.swift */,
+				B17654707D12326D62674FEEC02F9FDE /* SHA1.swift */,
+				D337534353CA677D1ECEAB6C19F1880B /* String+OAuthSwift.swift */,
+				33D985201AC8416BB96981338F639165 /* UIApplication+OAuthSwift.swift */,
+				02F5FF1D6AD8F3988793460700EF95E1 /* URL+OAuthSwift.swift */,
+				6A4A8C233665E02FF397E8C938AA6032 /* URLConvertible.swift */,
+				EF806D318E503AF202AE607222E10543 /* Utils.swift */,
+				9B0B5B805A35E4AB4D63F265BCFB5130 /* Support Files */,
+			);
+			path = OAuthSwift;
+			sourceTree = "<group>";
+		};
+		64CC40293BCF895B250E773E274B3715 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDA309AC08E1559904958C76F8AB8DA0 /* Pods-weather */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		73A9DBBE56D552A2384266E90CB09E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				115BD2CEB1DA2A5987FFDA5A92352FCB /* Groot.framework */,
+				67BD8DDFB48C091F1D325779FB9D6324 /* OAuthSwift.framework */,
+				478FF732DB71B9C96D89CDB78D82110B /* Pods_weather.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B0B5B805A35E4AB4D63F265BCFB5130 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E9E22F0FC6733F37A25C3609CA88A67 /* OAuthSwift.modulemap */,
+				05BA3E167BB032CBEEC0E469D4D81F7A /* OAuthSwift.xcconfig */,
+				BACCE790063AF934FF1C79E43B7CC2E6 /* OAuthSwift-dummy.m */,
+				99302C1CC82AC868B2A1854888EF086D /* OAuthSwift-Info.plist */,
+				624CC292B9B7A17EC53E9C9783CC5781 /* OAuthSwift-prefix.pch */,
+				5EB1CD8158D130126471624AF19A3838 /* OAuthSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OAuthSwift";
+			sourceTree = "<group>";
+		};
+		ABC82194F5EF6AF727FF3A77CBBDD6A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF15FB80AC71A8093FDD483A4A3A1ABF /* Groot */,
+				4E53F2CB8BB87E06BB1B8BDD65728542 /* OAuthSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				ABC82194F5EF6AF727FF3A77CBBDD6A4 /* Pods */,
+				73A9DBBE56D552A2384266E90CB09E70 /* Products */,
+				64CC40293BCF895B250E773E274B3715 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DDA309AC08E1559904958C76F8AB8DA0 /* Pods-weather */ = {
+			isa = PBXGroup;
+			children = (
+				82A0C2E6E6B37CDF2101D736A235439E /* Pods-weather.modulemap */,
+				B8432D2E5A81E574EF522C24A2FECC7D /* Pods-weather-acknowledgements.markdown */,
+				86642C5CF375E90A6C39C60AF84D3BD0 /* Pods-weather-acknowledgements.plist */,
+				B23C6A12917135A9186423EC53F01B61 /* Pods-weather-dummy.m */,
+				B057084FA747235A6E286E80BE9624F6 /* Pods-weather-frameworks.sh */,
+				B6172469418FC28458879D89707675E1 /* Pods-weather-Info.plist */,
+				217C748A4A88DC04055B0F87DCDAD599 /* Pods-weather-umbrella.h */,
+				D8CD5C9E8B2FBE8146E6E1EC9989C6E0 /* Pods-weather.debug.xcconfig */,
+				C82B2971576EAADE99758FB087F18984 /* Pods-weather.release.xcconfig */,
+			);
+			name = "Pods-weather";
+			path = "Target Support Files/Pods-weather";
+			sourceTree = "<group>";
+		};
+		FF15FB80AC71A8093FDD483A4A3A1ABF /* Groot */ = {
+			isa = PBXGroup;
+			children = (
+				439E604F856BBCF319B9FCB7D4B90B9F /* Support Files */,
+				02100A24B3561D0CCB7C6B342023096F /* Swift */,
+			);
+			path = Groot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47BB08C0378DD4E3C8B7585C24F19F66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA3D12B23502584EBE5E3598FCC1B91 /* Groot-umbrella.h in Headers */,
+				F9739AB8575C91F7FA0F41B52579E5B1 /* Groot.h in Headers */,
+				685325E1CA40A40400500762BC6BC4B5 /* GRTCompositeUniquingSerializationStrategy.h in Headers */,
+				67418B37E38CEF881149AEC5800E7D9F /* GRTError.h in Headers */,
+				51CD823F936FBC73921F323928A3BB13 /* GRTInsertSerializationStrategy.h in Headers */,
+				226852C7829EA09E560FE29C5E2CA684 /* GRTJSONSerialization.h in Headers */,
+				DCD5946D527AB9CF3F1ACB214830485F /* GRTManagedObjectSerializer.h in Headers */,
+				191AE43B17C2FD798D0C6085B23766FB /* GRTManagedStore.h in Headers */,
+				07036A247823204B48B1B4B0E5DFDA0C /* GRTSerializationStrategy.h in Headers */,
+				8F453F48D23D9B7EA3A652D26C9778D1 /* GRTUniquingSerializationStrategy.h in Headers */,
+				E7ED6AA3C3133DCC454194585FB53910 /* GRTValueTransformer.h in Headers */,
+				5588A4465814B6E8D986BF3C38B874DC /* NSArray+DictionaryTransformer.h in Headers */,
+				D9128A7AF733CCF0AD83EB9940537CA9 /* NSAttributeDescription+Groot.h in Headers */,
+				B25499C704DF9B20AD6BF98E7010E345 /* NSEntityDescription+Groot.h in Headers */,
+				0C8450736D5E0ACD11A64A6599B950F6 /* NSManagedObject+Groot.h in Headers */,
+				FC70EEB796E14FE6B87FD62D8C118A88 /* NSPropertyDescription+Groot.h in Headers */,
+				491F097F0A3750BF5A7AD5175C353B53 /* NSValueTransformer+Groot.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4826241B72D4408583653859719D8024 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B514298D2AD2B5BDDCA4BCD37A8155F5 /* Pods-weather-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A98BDD009F2946007ACD9917355094C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57265AC6C511CA6236B15C74D29FF62 /* OAuthSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B12BDD79376D157DF206CE8D82736668 /* OAuthSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6194FBA6B68C91EA7AF83A692C81E8D6 /* Build configuration list for PBXNativeTarget "OAuthSwift" */;
+			buildPhases = (
+				7A98BDD009F2946007ACD9917355094C /* Headers */,
+				A0C98639B98D250A84C03550584B3621 /* Sources */,
+				EB58E60224B9504258A4248F9D5A4ED5 /* Frameworks */,
+				7CDF7967061015DC81BBA3721B934AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OAuthSwift;
+			productName = OAuthSwift;
+			productReference = 67BD8DDFB48C091F1D325779FB9D6324 /* OAuthSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC4E029A89C5CD76D0A70B1298CE4D17 /* Pods-weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F5C294646E4A8C7FC8DE220E6B6851 /* Build configuration list for PBXNativeTarget "Pods-weather" */;
+			buildPhases = (
+				4826241B72D4408583653859719D8024 /* Headers */,
+				BB55F4D030C7EE9368D1401DDB2296B0 /* Sources */,
+				C83B44162484C8BA7FE44F1D356DA48D /* Frameworks */,
+				4D0D2D59AD1659FE58C3767FAAE203A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333AC2FCD0FB8660ADD357779B2FC68A /* PBXTargetDependency */,
+				67C52A8776F22CC24DFD356804ED8DF9 /* PBXTargetDependency */,
+			);
+			name = "Pods-weather";
+			productName = "Pods-weather";
+			productReference = 478FF732DB71B9C96D89CDB78D82110B /* Pods_weather.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDC4FC46E4BE584E1B0448F97C351034 /* Groot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 980ECF38DED66D93331703EF6D1E7E8E /* Build configuration list for PBXNativeTarget "Groot" */;
+			buildPhases = (
+				47BB08C0378DD4E3C8B7585C24F19F66 /* Headers */,
+				1B9750AF545988F2567CD900D5AFB1B3 /* Sources */,
+				4BBFCB911AA45835926893BB36618BC5 /* Frameworks */,
+				E6F3C9ECCE1BF9838FB09EB4814F4A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Groot;
+			productName = Groot;
+			productReference = 115BD2CEB1DA2A5987FFDA5A92352FCB /* Groot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 73A9DBBE56D552A2384266E90CB09E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDC4FC46E4BE584E1B0448F97C351034 /* Groot */,
+				B12BDD79376D157DF206CE8D82736668 /* OAuthSwift */,
+				EC4E029A89C5CD76D0A70B1298CE4D17 /* Pods-weather */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D0D2D59AD1659FE58C3767FAAE203A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDF7967061015DC81BBA3721B934AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6F3C9ECCE1BF9838FB09EB4814F4A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B9750AF545988F2567CD900D5AFB1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46C737A053486F7C9875F01ADDAFC508 /* Groot-dummy.m in Sources */,
+				BD09FD5BFA80B9B5A606C4ADC5440095 /* Groot.swift in Sources */,
+				F05622D58BA14B177F72CE904549D6CF /* GRTCompositeUniquingSerializationStrategy.m in Sources */,
+				F7E734C64B8A4547796237D305E1AA32 /* GRTError.m in Sources */,
+				46F32E92425539DD2D3E9179A574B561 /* GRTInsertSerializationStrategy.m in Sources */,
+				D06EA3F97F681BB86867BA32539ADB9B /* GRTJSONSerialization.m in Sources */,
+				77364149AC1E3942703431CE8170377D /* GRTManagedObjectSerializer.m in Sources */,
+				40ED84BB56C66F87881D6A9DC62F9AF3 /* GRTManagedStore.m in Sources */,
+				E4A4A2340D93031F6A89AFF2566E6180 /* GRTSerializationStrategy.m in Sources */,
+				3936CE742856BD02B0AA80F87279B509 /* GRTUniquingSerializationStrategy.m in Sources */,
+				64E9008548CE2CB0BE8B8F3C67EBEEE1 /* GRTValueTransformer.m in Sources */,
+				B21B42C4A8FD93B7CC93CC6CC9706491 /* NSArray+DictionaryTransformer.m in Sources */,
+				740904F7177719A6E23966C19FB8ECC9 /* NSAttributeDescription+Groot.m in Sources */,
+				05878DD9133F550AD6C415D2A9AF2C4A /* NSEntityDescription+Groot.m in Sources */,
+				B0518808166614A2F53421B23ECCDE9B /* NSManagedObject+Groot.m in Sources */,
+				C02BC4FC1872A3E9D4DC8C36B8096360 /* NSPropertyDescription+Groot.m in Sources */,
+				4DA72106D9A8B351D5B6CD99A9E2400E /* NSValueTransformer+Groot.m in Sources */,
+				FDF896D819F967F1E5ED96DE6F86A6E5 /* ValueTransformer+Groot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0C98639B98D250A84C03550584B3621 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				234B2A2EC6AE4CE3DFBC79D53F365663 /* Collection+OAuthSwift.swift in Sources */,
+				C512AA403116070406CB2A994034BFBC /* Data+OAuthSwift.swift in Sources */,
+				3680084EC5D26076029B01E45BBC4AA4 /* Dictionary+OAuthSwift.swift in Sources */,
+				8D7FA36CAFFE793070A87238E3873531 /* HMAC.swift in Sources */,
+				2833E76F8887566314855E67021B1356 /* Int+OAuthSwift.swift in Sources */,
+				864615ED1D3E20F1A195E36E6EC9DD62 /* NotificationCenter+OAuthSwift.swift in Sources */,
+				34741C5DB5821B4E1C0319400B608555 /* NSError+OAuthSwift.swift in Sources */,
+				55058428EDFDDA45C53F1B7C13495544 /* OAuth1Swift.swift in Sources */,
+				451C55B3D4CAD8BBC48E5C167020247A /* OAuth2Swift.swift in Sources */,
+				64480CDA99F57018DCC2EE47C097008C /* OAuthSwift-dummy.m in Sources */,
+				FD63C9E3B5960FC2748E0CC1897D53A2 /* OAuthSwift.swift in Sources */,
+				9D8F90D077ADEE3CBEE6756B6D491159 /* OAuthSwiftClient.swift in Sources */,
+				F65A0F2654BA9D551B046E47538C612B /* OAuthSwiftCredential.swift in Sources */,
+				9AD6FAF770D0AF4620008F911CFAA818 /* OAuthSwiftError.swift in Sources */,
+				1D87577E48E8417C758994DF4157E804 /* OAuthSwiftHTTPRequest.swift in Sources */,
+				4F84F8972BF6C75CF4079F44866D3A93 /* OAuthSwiftMultipartData.swift in Sources */,
+				B6EE55042FD7B7C98A680C6130998363 /* OAuthSwiftResponse.swift in Sources */,
+				D7B84CFED7519EA13D0E8B711C08C473 /* OAuthSwiftURLHandlerType.swift in Sources */,
+				7D171F86BFF978A7AC725110BEA6B72C /* OAuthWebViewController.swift in Sources */,
+				26894DF9CA5DCDBFC404D1CB39A5C186 /* Objc.swift in Sources */,
+				69DC2332D770A0B12F3C7D19C3A2EBAB /* SHA1.swift in Sources */,
+				29EDA1C0FEF0E299F4FD1F6ECD28AE2F /* String+OAuthSwift.swift in Sources */,
+				DD39B61874E63851FE0705111A54D9AA /* UIApplication+OAuthSwift.swift in Sources */,
+				8CA2F6B81D2773F2375395835FBFB295 /* URL+OAuthSwift.swift in Sources */,
+				BF34F503569C3B69F2F9D5A8E7F2716F /* URLConvertible.swift in Sources */,
+				4AF5DEEC70BFB70CF7DD12CA9677A660 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB55F4D030C7EE9368D1401DDB2296B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FB2935D67B0DB7BC8C138D39BE0C8A /* Pods-weather-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		333AC2FCD0FB8660ADD357779B2FC68A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Groot;
+			target = FDC4FC46E4BE584E1B0448F97C351034 /* Groot */;
+			targetProxy = 65CD502EB13CA3B05D63141A312C1A1E /* PBXContainerItemProxy */;
+		};
+		67C52A8776F22CC24DFD356804ED8DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OAuthSwift;
+			target = B12BDD79376D157DF206CE8D82736668 /* OAuthSwift */;
+			targetProxy = F57D26A92210F3C4A18066745AE01AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		081E74A9286FBAC121C464B9FC44EDD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA44EB7E4A4D4914A21C417284F649D6 /* Groot.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Groot/Groot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Groot/Groot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Groot/Groot.modulemap";
+				PRODUCT_MODULE_NAME = Groot;
+				PRODUCT_NAME = Groot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		16414A53DC9A30F2FBDDF258FEA76C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82B2971576EAADE99758FB087F18984 /* Pods-weather.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-weather/Pods-weather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-weather/Pods-weather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19731039E4DA9C751C5845AEFAFE2CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8CD5C9E8B2FBE8146E6E1EC9989C6E0 /* Pods-weather.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-weather/Pods-weather-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-weather/Pods-weather.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3CDF80ED239D1C2A422FF54F4FB4DC9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BA3E167BB032CBEEC0E469D4D81F7A /* OAuthSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A649B38219D7E1991E9F9819B96DB6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA44EB7E4A4D4914A21C417284F649D6 /* Groot.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Groot/Groot-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Groot/Groot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Groot/Groot.modulemap";
+				PRODUCT_MODULE_NAME = Groot;
+				PRODUCT_NAME = Groot;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F8B8FE75F36329C54090D97A68818CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BA3E167BB032CBEEC0E469D4D81F7A /* OAuthSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OAuthSwift/OAuthSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OAuthSwift/OAuthSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OAuthSwift/OAuthSwift.modulemap";
+				PRODUCT_MODULE_NAME = OAuthSwift;
+				PRODUCT_NAME = OAuthSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F5C294646E4A8C7FC8DE220E6B6851 /* Build configuration list for PBXNativeTarget "Pods-weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19731039E4DA9C751C5845AEFAFE2CC5 /* Debug */,
+				16414A53DC9A30F2FBDDF258FEA76C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0FE574C7B3479C6425BC136AA57D8C2 /* Debug */,
+				84A06F28E9E7D9EB0A9B476A8668FD60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6194FBA6B68C91EA7AF83A692C81E8D6 /* Build configuration list for PBXNativeTarget "OAuthSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CDF80ED239D1C2A422FF54F4FB4DC9A /* Debug */,
+				F8B8FE75F36329C54090D97A68818CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		980ECF38DED66D93331703EF6D1E7E8E /* Build configuration list for PBXNativeTarget "Groot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A649B38219D7E1991E9F9819B96DB6BE /* Debug */,
+				081E74A9286FBAC121C464B9FC44EDD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
