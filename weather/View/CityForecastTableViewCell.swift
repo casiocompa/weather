@@ -27,7 +27,7 @@ class CityForecastTableViewCell: UITableViewCell {
         // Update the user interface for the detail item.
         if let detail = cityForecast,
             let cityLable = cityLableOutlet,
-            let  temperatureLabel = temperatureLabelOutlet,
+            let temperatureLabel = temperatureLabelOutlet,
             let forecastImageView = forecastImageViewOutlet,
             let locationImageView = locationImageViewOutlet {
             cityLable.text = detail.city?.description
@@ -36,6 +36,9 @@ class CityForecastTableViewCell: UITableViewCell {
                 forecastImageView.image = UIImage(named: imageName)
             }else {
                 forecastImageView.image = UIImage(named: "not available")
+            }
+            if detail.currentLocation {
+                temperatureLabel.textColor = .orange
             }
             locationImageView.isHidden = !detail.currentLocation
         }
