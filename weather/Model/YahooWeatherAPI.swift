@@ -57,7 +57,7 @@ class YahooWeatherAPI {
     ///   - responseFormat: .xml or .json. default is .json.
     ///   - unit: metric or imperial units. default = .imperial
     
-    public func weathers(locationArray: [DefaultLocation], failure: @escaping (_ error: OAuthSwiftError) -> Void, success: @escaping (_ response: OAuthSwiftResponse) -> Void,
+    public func weathers(locationArray: [FetchData.DefaultLocation], failure: @escaping (_ error: OAuthSwiftError) -> Void, success: @escaping (_ response: OAuthSwiftResponse) -> Void,
                                  responseFormat:YahooWeatherAPIResponseType = .json, unit:YahooWeatherAPIUnitType = .metric) {
         locationArray.forEach { (location) in
             

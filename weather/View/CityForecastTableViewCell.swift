@@ -10,12 +10,10 @@ import UIKit
 
 class CityForecastTableViewCell: UITableViewCell {
 
-   
     @IBOutlet weak var cityLableOutlet: UILabel!
-    
     @IBOutlet weak var temperatureLabelOutlet: UILabel!
-    
     @IBOutlet weak var forecastImageViewOutlet: UIImageView!
+    @IBOutlet weak var locationImageViewOutlet: UIImageView!
     
     var cityForecast: CityWeathers? {
         didSet {
@@ -30,11 +28,16 @@ class CityForecastTableViewCell: UITableViewCell {
         if let detail = cityForecast,
             let cityLable = cityLableOutlet,
             let  temperatureLabel = temperatureLabelOutlet,
-            let forecastImageView = forecastImageViewOutlet {
+            let forecastImageView = forecastImageViewOutlet,
+            let locationImageView = locationImageViewOutlet {
             cityLable.text = detail.city?.description
             temperatureLabel.text = "\(detail.temperature.description) ºC"
-            forecastImageView.image = UIImage(named: "clear-day")
-        
+            if let imageName = FetchData().weatherConditionsCode[detail.code] {
+                forecastImageView.image = UIImage(named: imageName)
+            }else {
+                forecastImageView.image = UIImage(named: "not available")
+            }
+            locationImageView.isHidden = !detail.currentLocation
         }
         
     }

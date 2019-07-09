@@ -28,15 +28,6 @@ class DailyForecastTableViewCell: UITableViewCell {
         return dateFormatter
     }()
     
-    func dateisToDay(toDate: Date) -> Bool {
-        
-        let components = Calendar.current.dateComponents([.day], from: Date(), to: toDate)
-        print (components.day )
-        if components.day == 0 {
-            return true
-        }
-        return false
-    }
     
     var dailyForecast: Forecast? {
         didSet {
@@ -55,14 +46,20 @@ class DailyForecastTableViewCell: UITableViewCell {
             let forecastImageView = forecastImageViewOutlet {
             let dateInt =  Date(timeIntervalSince1970: TimeInterval(detail.date))
             
-            if dateisToDay(toDate: dateInt) {
+            if Calendar.current.isDateInToday(dateInt){
                 dayOfTheWeekLable.text = "Today"
             }else{
                 dayOfTheWeekLable.text = dateFormatterDayOfWeek.string(from: dateInt)
             }
             dateLable.text = dateFormatter.string(from: dateInt)
             temperatureLabel.text =  "\(detail.high.description) — \(detail.low.description) ºC"
-            forecastImageView.image = UIImage(named: "rain")
+
+            
+            if let imageName = FetchData().weatherConditionsCode[detail.code] {
+                forecastImageView.image = UIImage(named: imageName)
+            }else {
+                forecastImageView.image = UIImage(named: "not available")
+            }
         }
         
     }

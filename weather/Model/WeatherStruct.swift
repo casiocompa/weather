@@ -207,18 +207,69 @@ import Foundation
 
 //typealias CitiesWeatherForecast = [CityWeatherStruct]
 
-struct DefaultLocation {
-    let city: String
-    let country: String
-    let lat: Double
-    let long: Double
-    
-    init (city: String, country: String, lat: Double, long: Double){
-        self.city = city
-        self.country = country
-        self.lat = lat
-        self.long = long
-    }
-    
-}
 
+
+
+//enum weaterConditionsCode: String {
+//    case "0" = "tornado"
+//    case 1 = "tropical storm"
+//    case 2 = "hurricane"
+//    case 3 = "severe thunderstorms"
+//    case 4 = "thunderstorms"
+//    case 5 = "mixed rain and snow"
+//    case 6 = "mixed rain and sleet"
+//    case 7 = "mixed snow and sleet"
+//    case 8 = "freezing drizzle"
+//    case 9 = "drizzle"
+//    case 10 = "freezing rain"
+//    case 11 = "showers"
+//    case 12 = "rain"
+//    case 13 = "snow flurries"
+//    case 14 = "light snow showers"
+//    case 15 = "blowing snow"
+//    case 16 = "snow"
+//    case 17 = "hail"
+//    case 18 = "sleet"
+//    case 19 = "dust"
+//    case 20 = "foggy"
+//    case 21 = "haze"
+//    case 22 = "smoky"
+//    case 23 = "blustery"
+//    case 24 = "windy"
+//    case 25 = "cold"
+//    case 26 = "cloudy"
+//    case 27 = "mostly cloudy (night)"
+//    case 28 = "mostly cloudy (day)"
+//    case 29 = "partly cloudy (night)"
+//    case 30 = "partly cloudy (day)"
+//    case 31 = "clear (night)"
+//    case 32 = "sunny"
+//    case 33 = "fair (night)"
+//    case 34 = "fair (day)"
+//    case 35 = "mixed rain and hail"
+//    case 36 = "hot"
+//    case 37 = "isolated thunderstorms"
+//    case 38 = "scattered thunderstorms"
+//    case 39 = "scattered showers (day)"
+//    case 40 = "heavy rain"
+//    case 41 = "scattered snow showers (day)"
+//    case 42 = "heavy snow"
+//    case 43 = "blizzard"
+//    case 44 = "not available"
+//    case 45 = "scattered showers (night)"
+//    case 46 = "scattered snow showers (night)"
+//    case 47 = "scattered thundershowers"
+//}
+//
+//init?(_ val:Int) {
+//
+//    switch self {
+//    case .1: return "Понедельник"
+//    case .Tuesday: return "Вторник"
+//    case .Wednesday: return "Среда"
+//    case .Thursday: return "Четверг"
+//    case .Friday: return "Пятница"
+//    case .Saturday: return "Суббота"
+//    case .Sunday: return "Воскресенье"
+//    }
+//}

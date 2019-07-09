@@ -17,8 +17,6 @@ class TodayForecastTableViewCell: UITableViewCell {
     @IBOutlet weak var countryNameLableOutlet: UILabel!
     @IBOutlet weak var currentConditionLableOutlet: UILabel!
     @IBOutlet weak var temperatureLabelOutlet: UILabel!
-    
-
     @IBOutlet weak var forecastImageViewOutlet: UIImageView!
     
     
@@ -53,6 +51,12 @@ class TodayForecastTableViewCell: UITableViewCell {
             temperatureLabel.text = "\(detail.temperature) ºC"
             forecastImageView.image = UIImage(named: "clear-day")
             locationImageView.isHidden = !detail.currentLocation
+            
+            if let imageName = FetchData().weatherConditionsCode[detail.code] {
+                forecastImageView.image = UIImage(named: imageName)
+            }else {
+                forecastImageView.image = UIImage(named: "not available")
+            }
         }
         
     }
